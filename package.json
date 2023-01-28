@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "ajax": "^0.0.4",
+    "axios": "^1.2.3",
     "classnames": "^2.2.6",
+    "cypress": "^9.7.0",
     "normalize.css": "^8.0.1",
-    "react": "^16.9.0",
+    "react": "^16.14.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.4.4"
   },
@@ -15,7 +18,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public --ci",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "cypress": "cypress open -P ."
   },
   "browserslist": {
     "production": [
@@ -38,7 +42,10 @@
     "@storybook/react": "^5.0.10",
     "@testing-library/jest-dom": "^4.0.0",
     "@testing-library/react": "^8.0.7",
+    "@testing-library/react-hooks": "^8.0.1",
     "babel-loader": "8.1.0",
+    "prop-types": "^15.8.1",
+    "react-test-renderer": "^16.9.0",
     "sass": "^1.53.0"
   },
   "jest": {
@@ -46,5 +53,6 @@
       "<rootDir>/node_modules/",
       "<rootDir>/.git/"
     ]
-  }
+  },
+  "proxy": "http://localhost:8001"
 }
